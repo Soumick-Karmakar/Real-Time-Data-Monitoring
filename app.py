@@ -65,30 +65,30 @@ app.layout = html.Div([
             ),
         ], style={"width":"40%"}),
 
-        # # Variable section
-        # dbc.Col([
-        #     html.Div([
-        #         dbc.Label("Select Variable:", style={"fontSize": "20px", "fontWeight": "bold"}),
-        #         dcc.Dropdown(
-        #             id='variable-dropdown',
-        #             options=[
-        #                 {'label': 'Variable 1', 'value': 'var1'},
-        #                 {'label': 'Variable 2', 'value': 'var2'},
-        #                 {'label': 'Variable 3', 'value': 'var3'}
-        #             ],
-        #             value='var1',
-        #             style={"width": "100%"}
-        #         ),
-        #     ], style={"margin": "10px 0"})
-        # ]),
+        # Variable section
+        dbc.Col([
+            html.Div([
+                dbc.Label("Select Variable:", style={"fontSize": "20px", "fontWeight": "bold"}),
+                dcc.Dropdown(
+                    id='variable-dropdown',
+                    options=[
+                        {'label': 'Variable 1', 'value': 'var1'},
+                        {'label': 'Variable 2', 'value': 'var2'},
+                        {'label': 'Variable 3', 'value': 'var3'}
+                    ],
+                    value='var1',
+                    style={"width": "100%"}
+                ),
+            ], style={"margin": "10px 0"})
+        ]),
 
-        # # Alert section
-        # dbc.Col([
-        #     html.Div([
-        #         dbc.Alert("This is an alert message!", color="primary", style={"margin": "10px 0"}),
-        #         dbc.Alert("This is another alert message!", color="secondary", style={"margin": "10px 0"}),
-        #     ], style={"width": "100%", "padding": "20px"})
-        # ]),
+        # Alert section
+        dbc.Col([
+            html.Div([
+                dbc.Alert("This is an alert message!", color="primary", style={"margin": "10px 0"}),
+                dbc.Alert("This is another alert message!", color="secondary", style={"margin": "10px 0"}),
+            ], style={"width": "100%", "padding": "20px"})
+        ]),
     ], style ={"display":"flex", "flexDirection": "row", "alignItems": "center", "gap": "20px"}),
 ],style={"margin": "0 auto", "maxWidth": "1200px", "padding": "50px"})
 
