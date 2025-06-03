@@ -1,0 +1,38 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik&display=swap');
+
+* {
+  box-sizing: border-box;
+  font-family: 'Rubik', sans-serif;
+  color: white;
+}
+
+body {
+  height: 100vh;
+  margin: 0;
+  background-color: #1e223a; /* Base dark blue */
+  background-image:
+    radial-gradient(circle at 80% 10%, rgba(126, 87, 194, 0.4) 0%, transparent 40%),
+    radial-gradient(circle at 20% 50%, rgba(103, 58, 183, 0.35) 0%, transparent 45%);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+/*Tab design*/
+.tab {
+  backdrop-filter: blur(10px);
+  background: rgba(255, 255, 255, 0.1);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: 15px;
+  padding: 20px;
+  margin-bottom: 20px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  color: white;
+}
+
+.btn{
+  background-color: #1e223a;
+  min-width: 370px;
+  margin: 10px;
+  border-radius: 15px 15px 15px 15px;
+}
+
